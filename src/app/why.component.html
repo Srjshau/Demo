@@ -1,0 +1,6 @@
+<p>why works!</p>
+<select [(ngModel)]="selectedValue" (change)="onChange($event)">  
+    <option *ngFor="let url of urls" [value]="url.path">{{url.name}}</option>  
+</select> 
+
+<button (click)="read()">click to read</button>
